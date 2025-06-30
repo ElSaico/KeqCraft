@@ -1,6 +1,9 @@
 KeqCraft KubeJS
 ===============
 
+- O que está em `mods/` vai na pasta `config/` do servidor
+- As outras pastas vão em `kubejs/`
+
 ## TODO
 
 - [ ] Create automatable recipes for Point Blank items
