@@ -1,0 +1,9 @@
+.vscode/
+.idea/
+
+config/
+exported/
+
+# automatically created by ProbeJS
+jsconfig.json
+README.txt
