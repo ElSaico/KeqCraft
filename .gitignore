@@ -1,9 +1,8 @@
 .vscode/
 .idea/
 
-config/
-exported/
+.env
+node_modules/
 
-# automatically created by ProbeJS
-jsconfig.json
-README.txt
+.probe/
+kubejs/*/jsconfig.json
