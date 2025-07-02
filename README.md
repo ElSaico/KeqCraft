@@ -20,6 +20,5 @@ Just copy the `config/` and `kubejs/` folders there.
 
 ### TODO... maybe
 
-- [ ] Replace Powah's uraninite with uranium ingots
-- [ ] Add Mekanism's nuclear waste, polonium and plutonium directly to Extreme Reactors
+- [ ] Replace Extreme Reactors's blutonium directly with Mekanism's plutonium
   - https://github.com/ZeroNoRyouki/ExtremeReactors2/tree/master/modpack-api-wrapper
