@@ -7,11 +7,7 @@ Just copy the `config/` and `kubejs/` folders there.
 
 ## Development commands
 
-**IMPORTANT** - create an `.env` file at the root of this repository with the following content:
-
-```
-MODPACK_ROOT=<absolute path to the modpack's minecraft/ folder>
-```
+**IMPORTANT**: copy the `.env.example` file to `.env` and set `MODPACK_ROOT` with your modpack's location; remember to double the backslashes for Windows paths!
 
 - `npm run probe`: copy modpack's ProbeJS data to the repository; ensures autocomplete
 - `npm run push`: copy KubeJS and mod configuration files to the modpack

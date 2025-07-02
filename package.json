@@ -1,12 +1,12 @@
 {
   "name": "keqcraft",
+  "type": "module",
   "scripts": {
-    "push": "gulp pushToModpack",
-    "probe": "gulp importProbe"
+    "push": "node push-to-modpack.js",
+    "probe": "node import-probe.js"
   },
   "devDependencies": {
     "dotenv": "17.0.1",
-    "esm": "3.2.25",
-    "gulp": "5.0.1"
+    "glob": "11.0.3"
   }
 }
