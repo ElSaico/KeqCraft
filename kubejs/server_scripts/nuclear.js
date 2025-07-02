@@ -24,18 +24,15 @@ ServerEvents.recipes(e => {
             amount: 1
         }
 	});
-});
 
-/*
-RecipeViewerEvents.removeEntriesCompletely('item', e => {
-    // there's no equivalent uranium bucket so we must explicitly remove this
-    e.remove('bigreactors:yellorium_bucket');
+    // add missing uranium recipes to Extreme Reactors fluidizer blocks
+    // https://github.com/ZeroNoRyouki/ExtremeReactors2/issues/201
+    e.replaceInput(
+        [
+            { 'input': 'bigreactors:fluidizercasing' },
+            { 'output': 'bigreactors:fluidizercasing' },
+        ],
+        'bigreactors:yellorium_ingot',
+        '#c:ingots/uranium'
+    );
 });
-
-RecipeViewerEvents.removeEntriesCompletely('fluid', e => {
-    // remove liquid yellorium as Almost Unified still lacks fluid support
-    // https://github.com/AlmostReliable/almostunified/issues/106
-    e.remove('bigreactors:yellorium');
-    e.remove('bigreactors:yellorium_flowing');
-});
-*/
