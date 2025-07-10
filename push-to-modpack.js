@@ -1,12 +1,10 @@
-import fs from 'fs/promises';
+import fs from 'fs-extra';
 import path from 'path';
 
 import 'dotenv/config';
-import { glob } from 'glob';
 
-const files = await glob(['config/**', 'kubejs/**'], { nodir: true });
-for (const file of files) {
-    const dest = path.join(process.env.MODPACK_ROOT, file);
-    await fs.copyFile(file, dest);
-    console.log(file, '->', dest);
+for (const src of ['config/', 'kubejs/']) {
+    const dst = path.join(process.env.MODPACK_ROOT, src);
+    await fs.copy(src, dst);
+    console.log('done - remember to /reload!');
 }
