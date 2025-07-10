@@ -30,6 +30,8 @@ Just copy the `config/` and `kubejs/` folders there.
 ## Notes
 
 - Some recipes under `data/` are fixes for errors on their respective mods; if they ever get updated to fixed versions, those must be removed
+  - `cataclysm/`
+    - \[repository has issues disabled, but it was fixed in 3.x\]
   - `createaddition/`
     - TODO check if constantan mixing bug was reported
   - `createfood/`
