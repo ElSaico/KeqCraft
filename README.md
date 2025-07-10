@@ -17,8 +17,15 @@ Just copy the `config/` and `kubejs/` folders there.
 - [ ] Create automatable recipes for Point Blank items
 - [ ] Remove creative items from recipe viewer
 - [ ] Consolidate food recipes across mods (too many doughs, for one)
+- [ ] Consolidate sheet recipes (does tag unification solve it?)
+- [ ] Avoid errors caused by existing recipes
+- [ ] More tag unification
 
 ### TODO... maybe
 
 - [ ] Replace Extreme Reactors's blutonium directly with Mekanism's plutonium
   - https://github.com/ZeroNoRyouki/ExtremeReactors2/tree/master/modpack-api-wrapper
+
+## Notes
+
+- The recipes under `data/createfood/` should be removed if we ever update the mod, as they're fixed in newer versions
