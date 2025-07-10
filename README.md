@@ -14,11 +14,9 @@ Just copy the `config/` and `kubejs/` folders there.
 
 ## TODO
 
-- [ ] Create automatable recipes for Point Blank items
 - [ ] Remove creative items from recipe viewer
 - [ ] Consolidate food recipes across mods (too many doughs, for one)
 - [ ] Consolidate sheet recipes (does tag unification solve it?)
-- [ ] Avoid errors caused by existing recipes
 - [ ] More tag unification
 - [ ] Sync file removal on `push` command
 
