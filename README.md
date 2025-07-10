@@ -30,15 +30,5 @@ Just copy the `config/` and `kubejs/` folders there.
 ## Notes
 
 - Some recipes under `data/` are fixes for errors on their respective mods; if they ever get updated to fixed versions, those must be removed
-  - `cataclysm/`
-    - \[repository has issues disabled, but it was fixed in 3.x\]
-  - `createfood/`
-    - https://github.com/AverageAnime/create-food/issues/66 (fixed in 2.0.0-beta-2)
-    - https://github.com/AverageAnime/create-food/issues/67 (fixed in 2.0.0-beta-2)
-    - https://github.com/AverageAnime/create-food/issues/69 (fixed in 2.0.0-beta-3)
-    - https://github.com/AverageAnime/create-food/issues/71 (fixed in 2.0.0-beta-3)
-    - https://github.com/AverageAnime/create-food/issues/72 (fixed in 2.0.0-beta-3)
-    - https://github.com/AverageAnime/create-food/issues/74 (fixed in 2.0.0-beta-3)
-    - https://github.com/AverageAnime/create-food/issues/76 (fixed in 2.0.0-beta-3)
-  - `mekaweapons/`
-    - https://github.com/omeranha/MekaWeapons/issues/46
+  - `cataclysm/`: fixed in 3.x
+  - `mekaweapons/`: https://github.com/omeranha/MekaWeapons/issues/46
