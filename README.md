@@ -20,6 +20,7 @@ Just copy the `config/` and `kubejs/` folders there.
 - [ ] Consolidate sheet recipes (does tag unification solve it?)
 - [ ] Avoid errors caused by existing recipes
 - [ ] More tag unification
+- [ ] Sync file removal on `push` command
 
 ### TODO... maybe
 
