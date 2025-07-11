@@ -1,0 +1,13 @@
+name = "LittlePictureFrames"
+filename = "LittleFrames_NEOFORGE_v1.4.5_mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "98bc60c3a89ab42eb16971e910b2262fcb633336"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6383746
+project-id = 435557

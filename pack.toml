@@ -1,0 +1,12 @@
+name = "KeqCraft"
+version = "3.1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "b2367a54bebfa8e4745a7d0b9bb14ffbf4fba78325472e94db073ace59940bd8"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.187"

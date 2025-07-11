@@ -1,0 +1,13 @@
+name = "Ars Technica"
+filename = "ars_technica-1.21.1-2.2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2cce46a7284a818089f19ed6f6f92bd700dece9d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6633549
+project-id = 1096161
