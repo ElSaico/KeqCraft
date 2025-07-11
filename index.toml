@@ -2349,11 +2349,6 @@ hash = "e6448befb831607b6f7522250c5f6f2bfd57c80b614467286465b248258c3939"
 metafile = true
 
 [[files]]
-file = "mods/alltheleaks.pw.toml"
-hash = "0cdc1683db4b0d7c09033144d864c504841babd65f3d716b85e597c54f3170bf"
-metafile = true
-
-[[files]]
 file = "mods/almost-unified.pw.toml"
 hash = "674c0b5a3b389edc0d0e205c114715f59ebb3dce8d2ed0ceea525aa89a937f2d"
 metafile = true
@@ -2479,11 +2474,6 @@ hash = "770e14b5dd31c24ee58d9d876902c909fd7fe0ce3fe933220cf961f45f004052"
 metafile = true
 
 [[files]]
-file = "mods/c2me.pw.toml"
-hash = "853d1af08dc99698287b568f1f355616eb288c6a4ba77f705f90d1fb466daa46"
-metafile = true
-
-[[files]]
 file = "mods/caelus.pw.toml"
 hash = "03891e2139991fd25a654a5e880219d2ce2971633e875de13be4b67603d97331"
 metafile = true
@@ -2521,11 +2511,6 @@ metafile = true
 [[files]]
 file = "mods/copycats.pw.toml"
 hash = "e8562dd1a88ce84401100e45dbe9edcb8a04b67922718832acb1d1cc6e759b65"
-metafile = true
-
-[[files]]
-file = "mods/craftpresence.pw.toml"
-hash = "b0136a136a36d81ac464b6889d9fd01f2ceb7260b71a8f81f0c4d65f8f7e470b"
 metafile = true
 
 [[files]]
@@ -2574,11 +2559,6 @@ hash = "a60cc579fed71b89defa04f55e7f275a74df63c48b316655b593514cfcced110"
 metafile = true
 
 [[files]]
-file = "mods/cubes-without-borders.pw.toml"
-hash = "9441e0a305d19725ed73bfe5199263bc1617e7fffc67bd56534ef89a294535ed"
-metafile = true
-
-[[files]]
 file = "mods/curios.pw.toml"
 hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
 metafile = true
@@ -2591,26 +2571,6 @@ metafile = true
 [[files]]
 file = "mods/dungeon-and-taverns.pw.toml"
 hash = "042ff6bd1253a58e93d7ee172a2d565b0c8dedb1b88d0cb5ff7d2c9e73a04141"
-metafile = true
-
-[[files]]
-file = "mods/emi.pw.toml"
-hash = "1fc8ab07ea6f6abf5252a680f4ee72d7feaa652bc6b17214b1ddc5f5fe4c5d6d"
-metafile = true
-
-[[files]]
-file = "mods/ender-io.pw.toml"
-hash = "d3e545cc11931ff0d433a320fd6c1c4e8733715b5eabd7cf1ef987c23516e677"
-metafile = true
-
-[[files]]
-file = "mods/entityculling.pw.toml"
-hash = "b945b849d8570b452fae214ab90add58d7f421156f2dc46886fcd39c71c3d14e"
-metafile = true
-
-[[files]]
-file = "mods/extra-mod-integrations.pw.toml"
-hash = "1e55e6873a5a1dcf5a326e409c2cc856ffbc950183fe61f96e76e778e1cbe4a3"
 metafile = true
 
 [[files]]
@@ -2629,11 +2589,6 @@ hash = "40077a508ec11ae553b4d8e1aee58a09ec179615716e303d8194120d77db4569"
 metafile = true
 
 [[files]]
-file = "mods/ferritecore.pw.toml"
-hash = "942b02525962980b6176677cca162d27c1210b686985ad11db0055fe39d42a7d"
-metafile = true
-
-[[files]]
 file = "mods/forbidden-arcanus.pw.toml"
 hash = "5552d58e0dfcf64a09232f884d91232b07cb38b95445a4d90c78b03ec6e9c3c8"
 metafile = true
@@ -2641,11 +2596,6 @@ metafile = true
 [[files]]
 file = "mods/framework.pw.toml"
 hash = "11bc4d2951f2bbb0dd17c77534f05c909987e19203398558713bc515f441d5a2"
-metafile = true
-
-[[files]]
-file = "mods/fusion-connected-textures.pw.toml"
-hash = "521156b5bbb19fff0b052c56659f2cd317c7649b7104d3ff6bd66d24f44b9ab6"
 metafile = true
 
 [[files]]
@@ -2661,11 +2611,6 @@ metafile = true
 [[files]]
 file = "mods/guideme.pw.toml"
 hash = "8cff51225f40315860a008dfba8a851e8398de06f84e7cac6dccffa80e61c757"
-metafile = true
-
-[[files]]
-file = "mods/immediatelyfast.pw.toml"
-hash = "f0b46153b8357899eb45c1c1991da11d5ae3dab28dbc92e6b8f49dbe2967c464"
 metafile = true
 
 [[files]]
@@ -2754,11 +2699,6 @@ hash = "68d2f3a2192ee8f742572ecf736c287ba3d172cd6e81e429ffba2d9d1b6462fd"
 metafile = true
 
 [[files]]
-file = "mods/light-overlay.pw.toml"
-hash = "c9a79c8e684a727cfb60a1644a0306a3401375bdac808f4c9ba3f8321a9ff678"
-metafile = true
-
-[[files]]
 file = "mods/lionfish-api.pw.toml"
 hash = "3d5d4c97ece8d1470d785fbffb44c1f17ca406931d08dd0cfd5d77745a956979"
 metafile = true
@@ -2839,18 +2779,8 @@ hash = "de1f95f86c28bd4df4a16af98201d55e29cb1ff5e1865d5297e12df0bc7a8b56"
 metafile = true
 
 [[files]]
-file = "mods/modernfix.pw.toml"
-hash = "9d5a7849e8434740de47b1e57ac57e3001ee2ac884089ca9d4f2e0f1a59c862e"
-metafile = true
-
-[[files]]
 file = "mods/modonomicon.pw.toml"
 hash = "9378cd0c38a8ec279a409ed3b021dd71a5ce2029f325c5c5a7371c543c949bb8"
-metafile = true
-
-[[files]]
-file = "mods/moreculling.pw.toml"
-hash = "d720ecbf6097102b3243462928c0453f1b4df24a6a0edfa57b83d655fdb2ef75"
 metafile = true
 
 [[files]]
