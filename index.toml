@@ -2830,7 +2830,7 @@ metafile = true
 
 [[files]]
 file = "mods/projecte-integration.pw.toml"
-hash = "39f396021178bef2c48f24a0d424688342a1ab52047e0ffcd1da94df0b7c7cca"
+hash = "e20929a90320acd6974769c561b595e7f06fd69d2ba4ad66035b0f86d4172ab8"
 metafile = true
 
 [[files]]
