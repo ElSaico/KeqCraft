@@ -1,4 +1,12 @@
 /README.md
 /*.js
 /*.json
-/env*
+
+.vscode/
+.idea/
+
+/.env*
+node_modules/
+
+.probe/
+kubejs/*/jsconfig.json
