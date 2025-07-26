@@ -2349,6 +2349,11 @@ hash = "e6448befb831607b6f7522250c5f6f2bfd57c80b614467286465b248258c3939"
 metafile = true
 
 [[files]]
+file = "mods/alltheleaks.pw.toml"
+hash = "467b52f808473c3a8c8381102a34d2d863b42d97760f92160ed04125629ea3e5"
+metafile = true
+
+[[files]]
 file = "mods/almost-unified.pw.toml"
 hash = "674c0b5a3b389edc0d0e205c114715f59ebb3dce8d2ed0ceea525aa89a937f2d"
 metafile = true
@@ -2474,6 +2479,11 @@ hash = "770e14b5dd31c24ee58d9d876902c909fd7fe0ce3fe933220cf961f45f004052"
 metafile = true
 
 [[files]]
+file = "mods/c2me-neoforge.pw.toml"
+hash = "cf0633c12a953d5e36e7c4af087753ef0f5970073a5496a2f11da195f8f60f1d"
+metafile = true
+
+[[files]]
 file = "mods/caelus.pw.toml"
 hash = "03891e2139991fd25a654a5e880219d2ce2971633e875de13be4b67603d97331"
 metafile = true
@@ -2586,6 +2596,11 @@ metafile = true
 [[files]]
 file = "mods/farming-for-blockheads.pw.toml"
 hash = "40077a508ec11ae553b4d8e1aee58a09ec179615716e303d8194120d77db4569"
+metafile = true
+
+[[files]]
+file = "mods/ferrite-core.pw.toml"
+hash = "05d96d5b17399f048469ff4b44451eb8d99cc7a2a075ff55718c397cb508b0c2"
 metafile = true
 
 [[files]]
@@ -2705,7 +2720,7 @@ metafile = true
 
 [[files]]
 file = "mods/lithium.pw.toml"
-hash = "908cbf89e774b114d1dc3aef4806c9d2d782cfd314be001718bb690af9b074a8"
+hash = "b8ce87d9a7164676e68e69e9e6706cd6e9123b1fe740612b1ba39b43ce8675ef"
 metafile = true
 
 [[files]]
@@ -2779,8 +2794,18 @@ hash = "de1f95f86c28bd4df4a16af98201d55e29cb1ff5e1865d5297e12df0bc7a8b56"
 metafile = true
 
 [[files]]
+file = "mods/modernfix.pw.toml"
+hash = "a9593968393bae08257ba9aae887ad60fc49991f676b637006b2bcd89907f09a"
+metafile = true
+
+[[files]]
 file = "mods/modonomicon.pw.toml"
 hash = "9378cd0c38a8ec279a409ed3b021dd71a5ce2029f325c5c5a7371c543c949bb8"
+metafile = true
+
+[[files]]
+file = "mods/noisium.pw.toml"
+hash = "d424a9260ef51bc102e56f0423d91dfabb739ccca8a86eb1c450ea631b739280"
 metafile = true
 
 [[files]]
@@ -2896,6 +2921,11 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
 hash = "f2fd44e0846cd6908a342f9c21c48df36b59a7094316594c4c571e028edc8a4f"
+metafile = true
+
+[[files]]
+file = "mods/spark.pw.toml"
+hash = "593fa7b30ab016aa45be07bd6bef3a9f160ed0f24689850d60bf84995d69b843"
 metafile = true
 
 [[files]]
