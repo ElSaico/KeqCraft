@@ -7,4 +7,5 @@ node_modules/
 .probe/
 kubejs/*/jsconfig.json
 
+*.zip
 *.mrpack
