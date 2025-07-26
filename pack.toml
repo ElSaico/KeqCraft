@@ -1,11 +1,11 @@
 name = "KeqCraft"
-version = "3.1"
+version = "3.1.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "078755650ba9f7a4002727212bf2e063b4239aeb2765085f94b2ec4e868b28ff"
+hash = "884de854da716ea9ee6ad8592bc57618dc38e1df584032fe3c5563b4fbabd141"
 
 [versions]
 minecraft = "1.21.1"

@@ -1,10 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".github/workflows/pages.yml"
-hash = "126e620223cd45f73df98fe568db875c51e3ce83d6a5ccbfce3278764d217074"
-
-[[files]]
 file = "config/almostunified/tags.json"
 hash = "844de3c99559bb0372a3a840659c6c64e1dd82bb217f25ed1641d68e1b39d44d"
 
@@ -345,11 +341,6 @@ hash = "ae7a7f17e345c25271f423f607e76bf46ea7f28e82971214abc9266345edd7f7"
 metafile = true
 
 [[files]]
-file = "mods/create-better-fps.pw.toml"
-hash = "c6bc8e2dfb0a4a6eaee1cdce49ca8a2333bc5495edb97b6543e57fc6f85701b4"
-metafile = true
-
-[[files]]
 file = "mods/create-cc-total-logistics.pw.toml"
 hash = "498118d8d811270df4b778dfc2834ede888a3183b96ad1d9d0dfddcf56a38ed1"
 metafile = true
@@ -525,6 +516,11 @@ hash = "297eb75ce1aedc28f183a8891fde9c67318953e6c8adf3d7531a17b211f9349d"
 metafile = true
 
 [[files]]
+file = "mods/kubejs.pw.toml"
+hash = "b2e4e9c22fa6dbdedf14fefc64ae45ab6354ff00246e8c950d720ea9198eb75e"
+metafile = true
+
+[[files]]
 file = "mods/lendercataclysm.pw.toml"
 hash = "68d2f3a2192ee8f742572ecf736c287ba3d172cd6e81e429ffba2d9d1b6462fd"
 metafile = true
@@ -657,11 +653,6 @@ metafile = true
 [[files]]
 file = "mods/powah-rearchitected.pw.toml"
 hash = "3e2b7c3eab64758d3cf3ceb4c008ca78dffe996a96a56623e5a6b59cfa995f0c"
-metafile = true
-
-[[files]]
-file = "mods/probejs.pw.toml"
-hash = "2a8dd9366ed60e7040e90c1b87722b14729ffe080e693ef43151dea10d25ed38"
 metafile = true
 
 [[files]]
