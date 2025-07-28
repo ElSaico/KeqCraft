@@ -436,6 +436,11 @@ hash = "8cff51225f40315860a008dfba8a851e8398de06f84e7cac6dccffa80e61c757"
 metafile = true
 
 [[files]]
+file = "mods/immediatelyfast.pw.toml"
+hash = "4a86edd7760d87df421ffb0a37540944f5e3b63c4e7e1c367f32d0f31985c090"
+metafile = true
+
+[[files]]
 file = "mods/immersive-aircraft.pw.toml"
 hash = "51108048fd88cd4375b7f91c5327f8ec0d6eb3295ccb9011d42520784c175409"
 metafile = true
@@ -613,6 +618,11 @@ metafile = true
 [[files]]
 file = "mods/modonomicon.pw.toml"
 hash = "9378cd0c38a8ec279a409ed3b021dd71a5ce2029f325c5c5a7371c543c949bb8"
+metafile = true
+
+[[files]]
+file = "mods/moreculling.pw.toml"
+hash = "d720ecbf6097102b3243462928c0453f1b4df24a6a0edfa57b83d655fdb2ef75"
 metafile = true
 
 [[files]]

@@ -1,6 +1,6 @@
 name = "Lithium (Fabric/NeoForge)"
 filename = "lithium-neoforge-0.15.0+mc1.21.1.jar"
-side = "both"
+side = "server"
 
 [download]
 hash-format = "sha1"

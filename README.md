@@ -30,3 +30,5 @@ Just copy the `config/` and `kubejs/` folders there.
 - Some recipes under `data/` are fixes for errors on their respective mods; if they ever get updated to fixed versions, those must be removed
   - `cataclysm/`: fixed in 3.x
   - `mekaweapons/`: https://github.com/omeranha/MekaWeapons/issues/46
+- The optimization mods come from https://github.com/Radk6/MC-Optimization-Guide/blob/main/mods-n-stuff/1.21.1.md
+  - Entity Culling had to be vetoed because it's incompatible with another mod *[(guess which one)](https://github.com/CaffeineMC/sodium/issues/2985)*
