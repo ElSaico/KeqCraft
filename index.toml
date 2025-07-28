@@ -380,6 +380,11 @@ hash = "a60cc579fed71b89defa04f55e7f275a74df63c48b316655b593514cfcced110"
 metafile = true
 
 [[files]]
+file = "mods/cubes-without-borders.pw.toml"
+hash = "9441e0a305d19725ed73bfe5199263bc1617e7fffc67bd56534ef89a294535ed"
+metafile = true
+
+[[files]]
 file = "mods/curios.pw.toml"
 hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
 metafile = true
@@ -392,6 +397,11 @@ metafile = true
 [[files]]
 file = "mods/dungeon-and-taverns.pw.toml"
 hash = "042ff6bd1253a58e93d7ee172a2d565b0c8dedb1b88d0cb5ff7d2c9e73a04141"
+metafile = true
+
+[[files]]
+file = "mods/ender-io.pw.toml"
+hash = "d3e545cc11931ff0d433a320fd6c1c4e8733715b5eabd7cf1ef987c23516e677"
 metafile = true
 
 [[files]]
