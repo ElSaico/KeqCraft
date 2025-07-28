@@ -32,3 +32,12 @@ Just copy the `config/` and `kubejs/` folders there.
   - `mekaweapons/`: https://github.com/omeranha/MekaWeapons/issues/46
 - The optimization mods come from https://github.com/Radk6/MC-Optimization-Guide/blob/main/mods-n-stuff/1.21.1.md
   - Entity Culling had to be vetoed because it's incompatible with another mod *[(guess which one)](https://github.com/CaffeineMC/sodium/issues/2985)*
+- There's [a bug on packwiz](https://github.com/packwiz/packwiz/issues/295) that results on invalid CurseForge pack files; to fix it, edit `manifest.json` inside and change the `"modLoaders": []` line to
+```
+    "modLoaders": [
+      {
+        "id": "neoforge-21.1.187",
+        "primary": true
+      }
+    ]
+```
