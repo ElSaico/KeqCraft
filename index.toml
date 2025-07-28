@@ -5,6 +5,10 @@ file = "config/almostunified/tags.json"
 hash = "844de3c99559bb0372a3a840659c6c64e1dd82bb217f25ed1641d68e1b39d44d"
 
 [[files]]
+file = "config/modernfix-mixins.properties"
+hash = "36380192acd9c5d16794e31e2a8c7787d84601428192c0da8681568116f53983"
+
+[[files]]
 file = "kubejs/data/bigreactors/neoforge/biome_modifier/yellorite.json"
 hash = "048b3ef0a3d64ef3ffb178c244a0667c97ca844efcd6ac2cc7e3b9a590d58c45"
 
@@ -437,7 +441,7 @@ metafile = true
 
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
-hash = "4a86edd7760d87df421ffb0a37540944f5e3b63c4e7e1c367f32d0f31985c090"
+hash = "d778287f6af63f83571f2fb76ac46f1056ffc6c02243774a49b03a4df464b0fd"
 metafile = true
 
 [[files]]
@@ -537,7 +541,7 @@ metafile = true
 
 [[files]]
 file = "mods/lithium.pw.toml"
-hash = "908cbf89e774b114d1dc3aef4806c9d2d782cfd314be001718bb690af9b074a8"
+hash = "61102efbe920c5335025e4d34d560029a749db3f7c52212694283dc917849c81"
 metafile = true
 
 [[files]]
@@ -622,7 +626,7 @@ metafile = true
 
 [[files]]
 file = "mods/moreculling.pw.toml"
-hash = "d720ecbf6097102b3243462928c0453f1b4df24a6a0edfa57b83d655fdb2ef75"
+hash = "1e0c1280c07588b7ffc980a3b3d049c9f61b2342ef2de6ad9a1750c0a1ba1cbd"
 metafile = true
 
 [[files]]
@@ -727,7 +731,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "8d5628a4af0f355519b17bb0c6e5783c30aa78f6aa04b77b3892cd5d7c10af03"
+hash = "f3c75c6d415e4d68307d972ed30ced99ba05968c7ff85301154a60fc42eeed95"
 metafile = true
 
 [[files]]
