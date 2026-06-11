@@ -24,23 +24,6 @@ EntityEvents.spawned(event => {
   entity.persist()
 })
 
-EntityEvents.hurt(event => {
-  let entity = event.entity
-  if (entity.type !== 'minecraft:ender_dragon') return
-  if (!entity.persistentData.getBoolean('VerdantBuffed')) return
-
-  let src = event.source?.type || ''
-  if (src === 'wither' || src === 'instantDamage') {
-    event.cancel()
-    entity.heal(event.damage * 0.5)
-    return
-  }
-  if (src === 'levitation') {
-    event.cancel()
-    return
-  }
-})
-
 ServerEvents.tick(event => {
   if (event.server.tickCount % 20 !== 0) return
 
@@ -50,6 +33,9 @@ ServerEvents.tick(event => {
         let hp = dragon.health
         let maxHp = dragon.maxHealth
         let ratio = hp / maxHp
+
+        dragon.potionEffects.remove('minecraft:wither')
+        dragon.potionEffects.remove('minecraft:levitation')
 
         let roarCD = dragon.persistentData.getInt(DRAGON_ROAR_CD)
         let minionCD = dragon.persistentData.getInt(DRAGON_MINION_CD)

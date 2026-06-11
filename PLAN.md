@@ -17,9 +17,9 @@ VII. Absences
 
 ---
 
-## I. Mod List (Final — ~73 Mods)
+## I. Mod List (Final — ~72 Mods)
 
-### Content (33)
+### Content (32)
 
 | Mod | Version |
 |-----|---------|
@@ -28,7 +28,6 @@ VII. Absences
 | Create: Steam 'n Rails | Latest 1.21.1 |
 | Create: Deco | Latest |
 | Create: Connected | Latest |
-| Create: Enchantment Industry | Latest |
 | Create: Power Loader | Latest |
 | Create Addition | Latest |
 | Create Polyphony | Latest |

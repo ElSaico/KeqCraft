@@ -1,7 +1,6 @@
 // Priority: 40
 // pt_BR sensitivity manual — first-join distribution + craft
 
-const BOOK_ID = 'verdant_gears:sensitivity_book'
 const BOOK_TAG = 'VerdantBookGiven'
 
 const PAGES = [
@@ -23,26 +22,21 @@ const PAGES = [
   '{"text":"§7§o\\"A esperança ajuda.\\"\\n— M. v. Lipwig§r\\n\\n§8Carimbo oficial do\\nDepartamento de Relações\\nInterespécie de Ankh-Morpork\\n\\nAprovado pelo Patrício.\\nProtocolado em triplicata.\\nArquivado. Eventualmente.§r"}'
 ]
 
-function makeBook() {
-  let bookNbt = {
-    title: 'Guia de Sensibilidade Multiespécie',
-    author: 'Departamento de Relações Interespécie',
-    resolved: 1,
-    pages: PAGES
-  }
-  return Item.of('minecraft:written_book', bookNbt)
+function giveBookCommand(playerName) {
+  let pagesSnbt = PAGES.map(p => `'${p}'`).join(',')
+  return `give ${playerName} minecraft:written_book[written_book_content={title:{raw:"Guia de Sensibilidade Multiespécie"},author:"Departamento de Relações Interespécie",pages:[${pagesSnbt}],resolved:1b}] 1`
 }
 
 PlayerEvents.loggedIn(event => {
   let player = event.player
   if (player.persistentData.getBoolean(BOOK_TAG)) return
 
-  player.give(makeBook())
+  player.server.runCommandSilent(giveBookCommand(player.username))
   player.persistentData.putBoolean(BOOK_TAG, true)
 })
 
 ServerEvents.recipes(event => {
-  event.shapeless(makeBook(), [
+  event.shapeless('minecraft:written_book', [
     'minecraft:book',
     '#naturesaura:aura_bottles'
   ]).id('verdant_gears:sensitivity_book')

@@ -42,14 +42,14 @@ EntityEvents.spawned(event => {
   entity.persist()
 })
 
-EntityEvents.interact(event => {
-  let entity = event.entity
+ItemEvents.entityInteracted(event => {
+  let target = event.target
   let player = event.player
-  if (entity.type !== 'minecraft:zombie_villager') return
-  if (!entity.persistentData.contains(ZOMBIE_TAG)) return
+  if (!target || target.type !== 'minecraft:zombie_villager') return
+  if (!target.persistentData.contains(ZOMBIE_TAG)) return
 
-  let key = entity.persistentData.getString(ZOMBIE_TAG)
-  let profId = entity.persistentData.getString('VerdantZombieProfId')
+  let key = target.persistentData.getString(ZOMBIE_TAG)
+  let profId = target.persistentData.getString('VerdantZombieProfId')
   let profCfg = PROFESSIONS[profId]
 
   let payItem = profCfg?.pay || 'minecraft:emerald'
@@ -67,13 +67,13 @@ EntityEvents.interact(event => {
   let line = RELEASE_LINES[key] || RELEASE_LINES.generic
   player.tell(line)
 
-  let level = entity.level
-  let px = entity.x, py = entity.y, pz = entity.z
+  let level = target.level
+  let px = target.x, py = target.y, pz = target.z
 
   level.spawnParticles('minecraft:smoke', px, py + 1, pz, 20, 0.3, 0.5, 0.3, 0.02)
 
   event.server.scheduleInTicks(40, () => {
     level.spawnParticles('minecraft:ash', px, py + 0.5, pz, 30, 0.4, 0.8, 0.4, 0.01)
-    entity.discard()
+    target.discard()
   })
 })
