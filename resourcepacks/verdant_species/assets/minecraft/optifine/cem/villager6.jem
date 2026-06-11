@@ -1,0 +1,63 @@
+{
+  "credit": "Verdant Species — Igor model (hunched, stitched face, surgical apron, mismatched eyes)",
+  "textureSize": [64, 64],
+  "models": [
+    {
+      "part": "head",
+      "id": "head",
+      "invertAxis": "xy",
+      "translate": [1, -23, 2],
+      "rotate": [10, 5, 0],
+      "boxes": [
+        {"coordinates": [-3, 19, -4, 8, 8, 8], "textureOffset": [0, 0]}
+      ]
+    },
+    {
+      "part": "body",
+      "id": "body",
+      "invertAxis": "xy",
+      "translate": [0, -19, 1],
+      "rotate": [8, 0, 0],
+      "boxes": [
+        {"coordinates": [-4, 6, -3, 8, 13, 6], "textureOffset": [16, 20]},
+        {"coordinates": [-4, 6, -4, 8, 13, 1], "textureOffset": [0, 38], "comment": "surgical_apron"}
+      ]
+    },
+    {
+      "part": "left_leg",
+      "id": "left_leg",
+      "invertAxis": "xy",
+      "translate": [-2, -6, 0],
+      "boxes": [
+        {"coordinates": [-4, 0, -2, 4, 6, 4], "textureOffset": [0, 22]}
+      ]
+    },
+    {
+      "part": "right_leg",
+      "id": "right_leg",
+      "invertAxis": "xy",
+      "translate": [2, -6, 0],
+      "boxes": [
+        {"coordinates": [0, 0, -2, 4, 6, 4], "textureOffset": [0, 22]}
+      ]
+    },
+    {
+      "part": "left_arm",
+      "id": "left_arm",
+      "invertAxis": "xy",
+      "translate": [-5, -19, 1],
+      "boxes": [
+        {"coordinates": [-8, 6, -2, 4, 13, 4], "textureOffset": [44, 22]}
+      ]
+    },
+    {
+      "part": "right_arm",
+      "id": "right_arm",
+      "invertAxis": "xy",
+      "translate": [5, -19, 1],
+      "boxes": [
+        {"coordinates": [4, 6, -2, 4, 13, 4], "textureOffset": [44, 22]}
+      ]
+    }
+  ]
+}

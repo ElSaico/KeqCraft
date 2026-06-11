@@ -1,0 +1,63 @@
+{
+  "credit": "Verdant Species — Goblin model (hunched, sharp, green-toned)",
+  "textureSize": [64, 64],
+  "models": [
+    {
+      "part": "head",
+      "id": "head",
+      "invertAxis": "xy",
+      "translate": [0, -22, 2],
+      "rotate": [15, 0, 0],
+      "boxes": [
+        {"coordinates": [-3, 18, -3, 6, 6, 6], "textureOffset": [0, 0]},
+        {"coordinates": [-1, 18, -5, 2, 3, 2], "textureOffset": [24, 0], "comment": "nose"}
+      ]
+    },
+    {
+      "part": "body",
+      "id": "body",
+      "invertAxis": "xy",
+      "translate": [0, -18, 1],
+      "rotate": [10, 0, 0],
+      "boxes": [
+        {"coordinates": [-3, 6, -2, 6, 12, 4], "textureOffset": [16, 20]}
+      ]
+    },
+    {
+      "part": "left_leg",
+      "id": "left_leg",
+      "invertAxis": "xy",
+      "translate": [-1, -6, 0],
+      "boxes": [
+        {"coordinates": [-3, 0, -1, 3, 6, 3], "textureOffset": [0, 22]}
+      ]
+    },
+    {
+      "part": "right_leg",
+      "id": "right_leg",
+      "invertAxis": "xy",
+      "translate": [1, -6, 0],
+      "boxes": [
+        {"coordinates": [0, 0, -1, 3, 6, 3], "textureOffset": [0, 22]}
+      ]
+    },
+    {
+      "part": "left_arm",
+      "id": "left_arm",
+      "invertAxis": "xy",
+      "translate": [-4, -18, 1],
+      "boxes": [
+        {"coordinates": [-6, 6, -1, 3, 12, 3], "textureOffset": [44, 22]}
+      ]
+    },
+    {
+      "part": "right_arm",
+      "id": "right_arm",
+      "invertAxis": "xy",
+      "translate": [4, -18, 1],
+      "boxes": [
+        {"coordinates": [3, 6, -1, 3, 12, 3], "textureOffset": [44, 22]}
+      ]
+    }
+  ]
+}

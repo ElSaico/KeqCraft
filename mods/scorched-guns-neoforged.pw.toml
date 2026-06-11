@@ -1,0 +1,13 @@
+name = "Scorched Guns Neoforged"
+filename = "ScorchedGuns-1.4.4.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/GwtIopV4/versions/wzSAykwW/ScorchedGuns-1.4.4.1.jar"
+hash-format = "sha512"
+hash = "283a76fa30cef6860095ee12d16b2f4ac26bdba760310b8e2553e1c6d508f12df3ec8bd1a6dc93c32c797c88eb9adcbb239389c64e2484ed68e704cb4d395fef"
+
+[update]
+[update.modrinth]
+mod-id = "GwtIopV4"
+version = "wzSAykwW"
