@@ -140,18 +140,18 @@ The name is the role. name == "Igor" — exact match. No surname, no profession 
 
 ---
 
-## IV. KubeJS Script Suite (6 scripts / ~630 lines)
+## IV. KubeJS Scripts + Datapack
 
-Ore/ingot/dust unification is handled by Almost Unified (mod-level, no script needed).
+Ore/ingot/dust unification is handled by Almost Unified (mod-level).
+Cross-pillar bridge is handled by block tags (furnace heater → Create boiler) in data/create/tags/block/.
+Sensitivity Book craft uses Patchouli's native recipe type (data/verdant_gears/recipe/).
 
-| # | Script | Lines | Role |
-|---|--------|-------|------|
-| 1 | bridge_recipes.js | ~120 | Nature's Aura ↔ Occultism ↔ Create ↔ Iron's cross-linking |
-| 2 | cataclysm_loot.js | ~40 | Pillar-relevant loot in Cataclysm boss drops |
-| 3 | troll_temperature.js | ~170 | Troll material spawning + environmental intelligence |
-| 4 | ender_dragon_buff.js | ~130 | Raid-tier Ender Dragon |
-| 5 | zombie_release.js | ~90 | Silent endurance + Death's release on trade completion |
-| 6 | sensitivity_book.js | ~80 | pt_BR sensitivity manual, first-join distribution + craft |
+| # | Script | Role |
+|---|--------|------|
+| 1 | troll_temperature.js | Troll material spawning + environmental intelligence |
+| 2 | ender_dragon_buff.js | Raid-tier Ender Dragon (phase-aware abilities) |
+| 3 | zombie_release.js | Silent endurance + Death's release on trade completion |
+| 4 | sensitivity_book.js | First village sight → Patchouli book distribution |
 
 ---
 
@@ -205,7 +205,7 @@ Abilities:
 
 Immune: Levitation, Wither, Instant Damage (heals).
 
-Loot: Dormant Dragon Heart ×1, Dragon Scale ×16–24, Ender Pearl ×32–48.
+Loot: Nether Star ×1, Ender Pearl ×32–48, Dragon's Breath ×8–16.
 
 ### C. Zombie Release (zombie_release.js)
 
@@ -288,12 +288,11 @@ Primary language: Brazilian Portuguese.
 
 1. Core mod pack assembly + version resolution + Almost Unified config
 2. bridge_recipes.js
-3. cataclysm_loot.js
-4. troll_temperature.js
-5. ender_dragon_buff.js
-6. zombie_release.js
-7. sensitivity_book.js + pt_br.json
-8. Verdant Species resource pack (parallel with scripts 1–4)
+3. troll_temperature.js
+4. ender_dragon_buff.js
+5. zombie_release.js
+6. sensitivity_book.js + pt_br.json
+7. Verdant Species resource pack (parallel with scripts 1–3)
 
 ---
 

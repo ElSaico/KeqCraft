@@ -1,122 +1,113 @@
 // Priority: 25
-// Raid-tier Ender Dragon — 600 HP, abilities, custom loot
+// Raid-tier Ender Dragon — phase-aware abilities
 
-const DRAGON_ROAR_CD = 'VerdantDragonRoarCD'
-const DRAGON_MINION_CD = 'VerdantDragonMinionCD'
-const DRAGON_SLAM_CD = 'VerdantDragonSlamCD'
+/** @type {typeof import("@package/net/minecraft/world/entity/boss/enderdragon/phases").$EnderDragonPhase} */
+const $EnderDragonPhase = Java.loadClass('net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase')
 
-EntityEvents.spawned(event => {
-  let entity = event.entity
-  if (entity.type !== 'minecraft:ender_dragon') return
-  if (entity.persistentData.getBoolean('VerdantBuffed')) return
+EntityEvents.spawned('minecraft:ender_dragon', event => {
+  /** @type {import("@package/net/minecraft/world/entity/boss/enderdragon").$EnderDragon} */
+  const dragon = /** @type {any} */ (event.entity)
 
-  entity.modifyAttribute('minecraft:max_health', 'verdant_gears:dragon_hp', 400, 'addition')
-  entity.modifyAttribute('minecraft:attack_damage', 'verdant_gears:dragon_atk', 8, 'addition')
-  entity.modifyAttribute('minecraft:armor', 'verdant_gears:dragon_armor', 8, 'addition')
-  entity.modifyAttribute('minecraft:armor_toughness', 'verdant_gears:dragon_tough', 4, 'addition')
-  entity.modifyAttribute('minecraft:knockback_resistance', 'verdant_gears:dragon_kb', 0.75, 'addition')
-  entity.heal(600)
-
-  entity.persistentData.putBoolean('VerdantBuffed', true)
-  entity.persistentData.putInt(DRAGON_ROAR_CD, 0)
-  entity.persistentData.putInt(DRAGON_MINION_CD, 0)
-  entity.persistentData.putInt(DRAGON_SLAM_CD, 0)
-  entity.persist()
+  dragon.setMaxHealth(600)
+  dragon.setAttributeBaseValue('minecraft:generic.attack_damage', 18)
+  dragon.setAttributeBaseValue('minecraft:generic.armor', 8)
+  dragon.setAttributeBaseValue('minecraft:generic.armor_toughness', 4)
+  dragon.setAttributeBaseValue('minecraft:generic.knockback_resistance', 0.75)
+  dragon.heal(600)
 })
 
 ServerEvents.tick(event => {
   if (event.server.tickCount % 20 !== 0) return
 
-  event.server.allLevels.forEach(level => {
-    level.getEntities(null, e => e.type === 'minecraft:ender_dragon' && e.persistentData.getBoolean('VerdantBuffed'))
-      .forEach(dragon => {
-        let hp = dragon.health
-        let maxHp = dragon.maxHealth
-        let ratio = hp / maxHp
+  /** @type {import("@package/net/minecraft/world/entity/boss/enderdragon").$EnderDragon} */
+  const dragon = /** @type {any} */ (event.server.entities.filterType('minecraft:ender_dragon').getFirst())
+  if (!dragon) return
 
-        dragon.potionEffects.remove('minecraft:wither')
-        dragon.potionEffects.remove('minecraft:levitation')
+  const ratio = dragon.getHealth() / dragon.getMaxHealth()
+  const px = dragon.getX()
+  const py = dragon.getY()
+  const pz = dragon.getZ()
+  const phase = dragon.getPhaseManager().getCurrentPhase().getPhase()
 
-        let roarCD = dragon.persistentData.getInt(DRAGON_ROAR_CD)
-        let minionCD = dragon.persistentData.getInt(DRAGON_MINION_CD)
-        let slamCD = dragon.persistentData.getInt(DRAGON_SLAM_CD)
+  dragon.removeEffect('minecraft:wither')
+  dragon.removeEffect('minecraft:levitation')
 
-        if (roarCD > 0) dragon.persistentData.putInt(DRAGON_ROAR_CD, roarCD - 1)
-        if (minionCD > 0) dragon.persistentData.putInt(DRAGON_MINION_CD, minionCD - 1)
-        if (slamCD > 0) dragon.persistentData.putInt(DRAGON_SLAM_CD, slamCD - 1)
-
-        let px = dragon.x, py = dragon.y, pz = dragon.z
-
-        if (roarCD <= 0) {
-          dragon.persistentData.putInt(DRAGON_ROAR_CD, 45)
-          level.getEntities(null, e => e.isPlayer() && e.distanceTo(dragon) <= 10)
-            .forEach(player => {
-              player.potionEffects.add('minecraft:levitation', 60, 0, false, true)
-              player.potionEffects.add('minecraft:slowness', 60, 1, false, true)
-            })
-          level.spawnParticles('minecraft:dragon_breath', px, py, pz, 30, 5, 3, 5, 0.1)
-        }
-
-        if (ratio < 0.5 && minionCD <= 0) {
-          dragon.persistentData.putInt(DRAGON_MINION_CD, 60)
-          let count = 3 + Math.floor(Math.random() * 3)
-          for (let i = 0; i < count; i++) {
-            let e = level.createEntity('minecraft:enderman')
-            e.setPos(
-              px + (Math.random() * 10 - 5),
-              py + 1,
-              pz + (Math.random() * 10 - 5)
-            )
-            e.persist()
-            e.spawn()
-          }
-          level.spawnParticles('minecraft:portal', px, py, pz, 40, 4, 2, 4, 0.5)
-        }
-
-        if (ratio < 0.3 && slamCD <= 0) {
-          dragon.persistentData.putInt(DRAGON_SLAM_CD, 30)
-          level.getEntities(null, e => e.isPlayer() && e.distanceTo(dragon) <= 8)
-            .forEach(player => {
-              player.attack(8)
-              player.setMotion(
-                (player.x - px) * 0.5,
-                0.8,
-                (player.z - pz) * 0.5
-              )
-            })
-          level.spawnParticles('minecraft:explosion', px, py, pz, 10, 3, 1, 3, 0.2)
-        }
-
-        if (ratio < 0.25) {
-          let bx = Math.floor(px) + Math.floor(Math.random() * 5 - 2)
-          let bz = Math.floor(pz) + Math.floor(Math.random() * 5 - 2)
-          let by = Math.floor(py)
-          for (let dx = -2; dx <= 2; dx++)
-            for (let dz = -2; dz <= 2; dz++) {
-              let bp = new BlockPos(bx + dx, by, bz + dz)
-              if (level.getBlockState(bp).block.id === 'minecraft:air')
-                level.setBlockAndUpdate(bp, Block.id('minecraft:dragon_breath'))
-            }
-        }
+  if (phase === $EnderDragonPhase.SITTING_ATTACKING) {
+    dragon.level.players.filter(e => e.distanceTo(dragon) <= 12)
+      .forEach(/** @param {import("@package/net/minecraft/world/entity/player").$Player} p */ p => {
+        p.potionEffects.add('minecraft:levitation', 60, 0, false, true)
+        p.potionEffects.add('minecraft:slowness', 60, 1, false, true)
       })
-  })
+    dragon.level.spawnParticles('minecraft:dragon_breath', false, px, py, pz, 30, 5, 3, 5, 0.1)
+  }
+
+  if (phase === $EnderDragonPhase.SITTING_FLAMING) {
+    let cloud = dragon.level.createEntity('minecraft:area_effect_cloud')
+    cloud.setPos(px + Math.random() * 6 - 3, py, pz + Math.random() * 6 - 3)
+    cloud.mergeNbt({
+      Radius: 2.5,
+      RadiusOnUse: -0.5,
+      RadiusPerTick: -0.005,
+      Duration: 400,
+      WaitTime: 5,
+      Particle: 'dragon_breath',
+      effects: [{id: 'minecraft:instant_damage', amplifier: 1, duration: 1}]
+    })
+    cloud.spawn()
+  }
+
+  if (phase === $EnderDragonPhase.SITTING_SCANNING && ratio < 0.5) {
+    dragon.getPhaseManager().setPhase($EnderDragonPhase.CHARGING_PLAYER)
+  }
+
+  if (phase === $EnderDragonPhase.HOLDING_PATTERN && ratio < 0.3) {
+    if (Math.random() < 0.15) {
+      dragon.getPhaseManager().setPhase($EnderDragonPhase.STRAFE_PLAYER)
+    }
+  }
+
+  if (phase === $EnderDragonPhase.CHARGING_PLAYER) {
+    dragon.level.players.filter(e => e.distanceTo(dragon) <= 5)
+      .forEach(/** @param {import("@package/net/minecraft/world/entity/player").$Player} p */ p => {
+        p.setDeltaMovement([
+          (p.getX() - px) * 0.6,
+          0.9,
+          (p.getZ() - pz) * 0.6
+        ])
+      })
+  }
+
+  let minionCD = dragon.persistentData.getInt('VerdantMinionCD')
+  if (minionCD > 0) dragon.persistentData.putInt('VerdantMinionCD', minionCD - 1)
+
+  if (ratio < 0.5 && minionCD <= 0) {
+    dragon.persistentData.putInt('VerdantMinionCD', 60)
+    let count = 2 + Math.floor(Math.random() * 3)
+    for (let i = 0; i < count; i++) {
+      /** @type {import("@package/net/minecraft/world/entity/monster").$EnderMan} */
+      let e = /** @type {any} */ (dragon.level.createEntity('minecraft:enderman'))
+      e.setPos(px + Math.random() * 10 - 5, py + 1, pz + Math.random() * 10 - 5)
+      e.setPersistenceRequired()
+      e.spawn()
+    }
+    dragon.level.spawnParticles('minecraft:portal', false, px, py, pz, 40, 4, 2, 4, 0.5)
+  }
 })
 
-EntityEvents.death(event => {
-  let entity = event.entity
-  if (entity.type !== 'minecraft:ender_dragon') return
-  if (!entity.persistentData.getBoolean('VerdantBuffed')) return
+EntityEvents.death('minecraft:ender_dragon', event => {
+  /** @type {import("@package/net/minecraft/world/entity/boss/enderdragon").$EnderDragon} */
+  const dragon = /** @type {any} */ (event.entity)
+  const px = dragon.getX()
+  const py = dragon.getY()
+  const pz = dragon.getZ()
 
-  let level = entity.level
-  let px = entity.x, py = entity.y, pz = entity.z
-
-  entity.block.popItem(Item.of('verdant_gears:dormant_dragon_heart'))
-
-  let scaleCount = 16 + Math.floor(Math.random() * 9)
-  entity.block.popItem(Item.of('verdant_gears:dragon_scale', scaleCount))
+  dragon.block.popItem('minecraft:nether_star')
 
   let pearlCount = 32 + Math.floor(Math.random() * 17)
-  entity.block.popItem(Item.of('minecraft:ender_pearl', pearlCount))
+  dragon.block.popItem({id: 'minecraft:ender_pearl', count: pearlCount})
 
-  level.spawnParticles('minecraft:dragon_breath', px, py, pz, 100, 8, 4, 8, 0.3)
+  let breathCount = 8 + Math.floor(Math.random() * 9)
+  dragon.block.popItem({id: 'minecraft:dragon_breath', count: breathCount})
+
+  dragon.level.spawnParticles('minecraft:dragon_breath', false, px, py, pz, 100, 8, 4, 8, 0.3)
 })

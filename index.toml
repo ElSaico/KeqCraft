@@ -2,39 +2,31 @@ hash-format = "sha256"
 
 [[files]]
 file = "kubejs/assets/verdant_gears/lang/en_us.json"
-hash = "da478d6e528633b64aa383198bb5e3b14e5c3bfb3a22fa85a6adfdd2d9b7705d"
+hash = "42ea9384722ddd91b4519e439627dcf546ff9c24c63eb40d5b351584b1252b45"
 
 [[files]]
 file = "kubejs/assets/verdant_gears/lang/pt_br.json"
-hash = "4da3a99d860be2bbd36c3bd3ae7d313a5dc1b703b1d7e239c04683156845d8f2"
+hash = "736ccf6ed4d265840ddef62e256201a54f5c0be21c36adfee3ffacf81f2c996b"
 
 [[files]]
 file = "kubejs/server_scripts/bridge_recipes.js"
-hash = "9244dc80185b0d7dfda2522b853e2a00d9639fe33238aa4e303b292f0a2ba181"
-
-[[files]]
-file = "kubejs/server_scripts/cataclysm_loot.js"
-hash = "c9545df3b155edcf9d9f8762fbc64b5bfa00ea15209cb1ec09d516297ff89738"
+hash = "62a8142bb418e9f22434b293fa9bcb3d168a43c49b6e68c6ae891e73b1d8f476"
 
 [[files]]
 file = "kubejs/server_scripts/ender_dragon_buff.js"
-hash = "846e38d8fecfb307aa04832b8482d0ad9ab4af096d9d9bf779c4b23fdce5d277"
+hash = "369fbdf3c177307333a50f918da730d5fe0ff06de43648f53f40a1db16a8593d"
 
 [[files]]
 file = "kubejs/server_scripts/sensitivity_book.js"
-hash = "30bd62ae66f555084857b026c3f31412779ed51725f8930eb79fd3bf2d136731"
+hash = "66b69c56f0aa0dfe1d5bb70ad90f642da227973f29e99295a056344c1dc85b03"
 
 [[files]]
 file = "kubejs/server_scripts/troll_temperature.js"
-hash = "60263fd5a4aabfbf35eb4e95009c4fce409df2676cadeccdea312b0dbbb36f89"
+hash = "2752ca7339b7e9542671415496630e5724ebf399e3b362ea536321994e028c10"
 
 [[files]]
 file = "kubejs/server_scripts/zombie_release.js"
-hash = "9d3ee770cd6dbf3b7ad510ce0a646bb7dbcd12db2f39d951540bff7c46f3bc01"
-
-[[files]]
-file = "kubejs/startup_scripts/custom_items.js"
-hash = "b82945666b49bc680877b3ad97a813b533cbb552b8b24aa6d24f0b4de88c7a4e"
+hash = "37fe7279fbfb7946d853cb1aadfd264d165dc5fc6e90e82b89d410e75ab6a8a5"
 
 [[files]]
 file = "mods/addon-for-irons-spells-n-spellbooks-unofficial.pw.toml"
@@ -73,7 +65,7 @@ metafile = true
 
 [[files]]
 file = "mods/better-combat.pw.toml"
-hash = "5486f656b149dd16ebd97ea62f3410372ad6883604f51e88d14f22c5263a8280"
+hash = "14739da07fc499578d454d678baf79fccf79353d03367d1be1f5c982062f8bbe"
 metafile = true
 
 [[files]]
@@ -153,7 +145,7 @@ metafile = true
 
 [[files]]
 file = "mods/curios.pw.toml"
-hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
+hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
 metafile = true
 
 [[files]]
@@ -198,7 +190,7 @@ metafile = true
 
 [[files]]
 file = "mods/geckolib.pw.toml"
-hash = "68e15ffc71a84261e0dbbb317329788c21a7b9eb8060687dc8a51008cc3029fe"
+hash = "0521ed2becdf2b460511c92e80e2702a4b6e540c85c99fb571844e1c7c505724"
 metafile = true
 
 [[files]]
@@ -229,6 +221,11 @@ metafile = true
 [[files]]
 file = "mods/jade.pw.toml"
 hash = "b6e0a61fea06f8d6d8e1672cf07b682625c4b74efd548d5093cd9c1fed167eec"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+hash = "5367193d3f87b7bc5a81bcd64a5b96a843e76d4df7a83c8bb7e1911aa82dd52e"
 metafile = true
 
 [[files]]
@@ -304,6 +301,11 @@ metafile = true
 [[files]]
 file = "mods/playeranimator.pw.toml"
 hash = "5b30dafc9e96471978376ee010cec0ddf592377ac94192c9370cb37973e1e95f"
+metafile = true
+
+[[files]]
+file = "mods/probejs.pw.toml"
+hash = "88b00d3ad54d43c702ff2840bfcdbb5405fa7b18d4a595a791bf5ebc649c6dab"
 metafile = true
 
 [[files]]

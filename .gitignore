@@ -4,7 +4,7 @@
 .env
 node_modules/
 
-.probe/
+.probe
 kubejs/*/jsconfig.json
 
 *.zip

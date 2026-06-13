@@ -4,7 +4,7 @@
 .idea/
 /.env*
 node_modules/
-.probe/
+.probe
 kubejs/*/jsconfig.json
 /build.sh
 /PLAN.md
