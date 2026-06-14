@@ -1,0 +1,16 @@
+{
+  "name": "Goblins",
+  "icon": "minecraft:slime_ball",
+  "category": "verdant_gears:species",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Goblins habitam pântanos, manguezais e florestas escuras. São curvados, ágeis e possuem uma relação profunda com objetos descartados.$(br2)Para um goblin, nada é lixo."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Nunca jogue fora algo na frente de um goblin. É considerado um desperdício moral.$(br2)A arte goblin — $(italic)unggue$() — é feita de materiais reciclados e é culturalmente sagrada."
+    }
+  ]
+}

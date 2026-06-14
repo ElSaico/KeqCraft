@@ -22,16 +22,16 @@ const RELEASE_LINES = {
   generic: 'ᴠᴏᴄê ᴀɢᴜᴇɴᴛᴏᴜ. ᴏ ôɴɪʙᴜs ғᴏɪ ʙᴇᴍ sᴜᴘᴇʀᴀᴅᴏ. ᴀᴛé ʟᴏɢᴏ.'
 }
 
-EntityEvents.spawned(event => {
+EntityEvents.spawned('minecraft:zombie_villager', event => {
+  return
   let entity = event.entity
-  if (entity.type !== 'minecraft:zombie_villager') return
   if (entity.persistentData.contains(ZOMBIE_TAG)) return
 
   entity.modifyAttribute('minecraft:max_health', 'verdant_gears:zv_hp', 20, 'addition')
   entity.modifyAttribute('minecraft:knockback_resistance', 'verdant_gears:zv_kb', 0.8, 'addition')
   entity.heal(40)
 
-  let nbt = entity.nbt
+  let nbt = entity.getNbt()
   let prof = String(nbt?.VillagerData?.profession || 'none').replace('minecraft:', '')
   let key = PROFESSIONS[prof]?.key || 'generic'
 
@@ -43,6 +43,7 @@ EntityEvents.spawned(event => {
 })
 
 ItemEvents.entityInteracted(event => {
+  return
   let target = event.target
   let player = event.player
   if (!target || target.type !== 'minecraft:zombie_villager') return
@@ -60,7 +61,7 @@ ItemEvents.entityInteracted(event => {
 
   held.shrink(payCount)
 
-  player.server.runCommandSilent(
+  player.getServer().runCommandSilent(
     `playsound minecraft:block.bell.use player ${player.username} ~ ~ ~ 0.6 0.5`
   )
 
@@ -68,12 +69,12 @@ ItemEvents.entityInteracted(event => {
   player.tell(line)
 
   let level = target.level
-  let px = target.x, py = target.y, pz = target.z
+  let px = target.getX(), py = target.getY(), pz = target.getZ()
 
-  level.spawnParticles('minecraft:smoke', px, py + 1, pz, 20, 0.3, 0.5, 0.3, 0.02)
+  level.spawnParticles('minecraft:smoke', false, px, py + 1, pz, 20, 0.3, 0.5, 0.3, 0.02)
 
   event.server.scheduleInTicks(40, () => {
-    level.spawnParticles('minecraft:ash', px, py + 0.5, pz, 30, 0.4, 0.8, 0.4, 0.01)
+    level.spawnParticles('minecraft:ash', false, px, py + 0.5, pz, 30, 0.4, 0.8, 0.4, 0.01)
     target.discard()
   })
 })

@@ -1,0 +1,20 @@
+{
+  "name": "Igors",
+  "icon": "minecraft:brewing_stand",
+  "category": "verdant_gears:species",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The name is the role. Every Igor is called Igor. Igors who marry adopt the family surname but keep Igor as professional designation.$(br2)Never ask $(italic)which$() Igor."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Igors are surgeons and transplanters. The stitched face and mismatched eyes are marks of craft, not defects.$(br2)If an Igor offers medical help, accept it. They are $(italic)very$() good at it."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The Igor Network is one of the oldest organizations in the world. Every Igor maintains spare parts from previous generations.$(br2)$(7)\"A good Igor never wastes.\""
+    }
+  ]
+}

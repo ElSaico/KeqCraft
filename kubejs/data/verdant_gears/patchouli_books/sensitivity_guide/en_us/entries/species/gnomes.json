@@ -1,0 +1,16 @@
+{
+  "name": "Gnomes",
+  "icon": "minecraft:compass",
+  "category": "verdant_gears:species",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Gnomes live in deserts, badlands, and hot savannas. They are small, wear turbans, and carry compasses.$(br2)Their chief virtue is navigation — never doubt a gnome's sense of direction."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Gnomes are natural couriers. If a gnome delivers something to you, $(italic)accept it$(). They probably walked days to reach you.$(br2)Never refuse a gnomish delivery."
+    }
+  ]
+}

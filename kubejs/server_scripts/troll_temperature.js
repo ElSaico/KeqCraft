@@ -65,6 +65,7 @@ function isTrollBiome(biomeName) {
 }
 
 EntityEvents.spawned(event => {
+  return
   let entity = event.entity
   if (entity.type !== 'minecraft:villager') return
   if (entity.persistentData.contains(TROLL_TAG)) return
@@ -100,6 +101,7 @@ EntityEvents.spawned(event => {
 })
 
 ServerEvents.tick(event => {
+  return
   if (event.server.tickCount % 100 !== 0) return
 
   event.server.allLevels.forEach(level => {

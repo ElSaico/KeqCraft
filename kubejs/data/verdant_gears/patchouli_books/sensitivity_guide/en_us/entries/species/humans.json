@@ -1,0 +1,12 @@
+{
+  "name": "Humans",
+  "icon": "minecraft:player_head",
+  "category": "verdant_gears:species",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The default species. Do not call them $(italic)halflings$() — it is offensive and inaccurate. Humans vary in size naturally.$(br2)Avoid assuming every short person is a dwarf or gnome."
+    }
+  ]
+}

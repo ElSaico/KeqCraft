@@ -1,0 +1,8 @@
+{
+  "type": "patchouli:shapeless_book_recipe",
+  "book": "verdant_gears:sensitivity_guide",
+  "ingredients": [
+    {"item": "minecraft:book"},
+    {"item": "naturesaura:gold_powder"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Goblins",
+  "icon": "minecraft:slime_ball",
+  "category": "verdant_gears:species",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Goblins inhabit swamps, mangroves, and dark forests. They are hunched, agile, and possess a deep relationship with discarded objects.$(br2)To a goblin, nothing is rubbish."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Never throw something away in front of a goblin. It is considered a moral waste.$(br2)Goblin art — $(italic)unggue$() — is made from recycled materials and is culturally sacred."
+    }
+  ]
+}

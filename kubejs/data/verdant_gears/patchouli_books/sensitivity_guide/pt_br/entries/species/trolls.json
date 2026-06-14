@@ -1,0 +1,20 @@
+{
+  "name": "Trolls",
+  "icon": "minecraft:stone",
+  "category": "verdant_gears:species",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Trolls são seres de silício. Seus cérebros funcionam melhor no frio — literalmente. Um troll em uma montanha congelada pode ser um filósofo.$(br2)O mesmo troll no deserto pode mal conseguir andar."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Existem dez materiais conhecidos de troll: pedra, gelo, ardósia profunda, arenito, lama, granito, calcita, obsidiana, Nether e diamante.$(br2)$(7)Nota: trolls de calcita são às vezes chamados $(italic)\"trolls de calcinha\"$() — o trocadilho é inevitável."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Trolls de diamante são extraordinariamente raros (0,5% de todos os trolls). Sua inteligência é constante e não sofre penalidades térmicas.$(br2)Se você encontrar um, $(italic)escute$()."
+    }
+  ]
+}

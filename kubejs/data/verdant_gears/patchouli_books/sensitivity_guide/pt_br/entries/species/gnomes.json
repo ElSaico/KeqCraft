@@ -1,0 +1,16 @@
+{
+  "name": "Gnomos",
+  "icon": "minecraft:compass",
+  "category": "verdant_gears:species",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Gnomos vivem em desertos, badlands e savanas quentes. São pequenos, usam turbantes e carregam bússolas.$(br2)Sua principal virtude é a navegação — nunca duvide do senso de direção de um gnomo."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Gnomos são correios naturais. Se um gnomo lhe entregar algo, $(italic)aceite$(). Ele provavelmente andou dias para chegar até você.$(br2)Nunca recuse uma entrega gnômica."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Humanos",
+  "icon": "minecraft:player_head",
+  "category": "verdant_gears:species",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A espécie padrão. Não os chame de $(italic)halflings$() — isso é ofensivo e impreciso. Humanos variam em tamanho naturalmente.$(br2)Evite presumir que toda pessoa de baixa estatura é um anão ou gnomo."
+    }
+  ]
+}

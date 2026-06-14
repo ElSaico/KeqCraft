@@ -1,0 +1,16 @@
+{
+  "name": "Dwarfs",
+  "icon": "minecraft:iron_pickaxe",
+  "category": "verdant_gears:species",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Dwarfs are artisans by vocation. Smiths, armorers, and tinkerers are traditional professions.$(br2)Never touch a dwarf's beard without permission. This is equivalent to a grave insult."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Dwarf gender is a private matter. Don't ask. Don't guess. Don't comment. All dwarfs wear beards and leather aprons — this is not a $(italic)clue$().$(br2)Respect the craft above all."
+    }
+  ]
+}

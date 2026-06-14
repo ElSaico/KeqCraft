@@ -1,0 +1,9 @@
+{
+  "name": "Guia de Sensibilidade Multiespécie",
+  "landing_text": "Departamento de Relações Interespécie$(br)Ankh-Morpork$(br2)$(bold)AVISO$(): Este guia é obrigatório para todos os cidadãos. Ignorá-lo não é ilegal, mas é mal-educado.",
+  "book_texture": "patchouli:textures/gui/book_brown.png",
+  "model": "patchouli:book_brown",
+  "creative_tab": "minecraft:misc",
+  "show_progress": false,
+  "i18n": true
+}

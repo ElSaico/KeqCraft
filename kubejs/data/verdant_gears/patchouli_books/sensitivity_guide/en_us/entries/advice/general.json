@@ -1,0 +1,16 @@
+{
+  "name": "General Advice",
+  "icon": "minecraft:name_tag",
+  "category": "verdant_gears:advice",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Treat every species with the same professional courtesy. Do not assume intelligence by appearance. Do not joke about diet (especially with trolls).$(br2)$(italic)Post-vital citizens$() deserve respect. Help them with unfinished business."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(7)$(italic)\"Hope helps.\"$(br)— M. v. Lipwig$()$(br2)$(8)Official stamp of the$(br)Department of Interspecies$(br)Relations, Ankh-Morpork$(br2)Approved by the Patrician.$(br)Filed in triplicate.$(br)Archived. Eventually."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Trolls",
+  "icon": "minecraft:stone",
+  "category": "verdant_gears:species",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Trolls are silicon-based beings. Their brains work better in the cold — literally. A troll on a frozen mountain can be a philosopher.$(br2)The same troll in the desert can barely walk."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "There are ten known troll materials: stone, ice, deepslate, sandstone, mud, granite, calcite, obsidian, Nether, and diamond.$(br2)$(7)Note: calcite trolls are sometimes called \"trolls de calcinha\" in Portuguese — the pun is inevitable."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Diamond trolls are extraordinarily rare (0.5% of all trolls). Their intelligence is constant and suffers no thermal penalties.$(br2)If you find one, $(italic)listen$()."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Conselhos Gerais",
+  "icon": "minecraft:name_tag",
+  "category": "verdant_gears:advice",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Trate cada espécie com a mesma cortesia profissional. Não presuma inteligência pela aparência. Não faça piadas sobre dieta (especialmente com trolls).$(br2)$(italic)Cidadãos pós-vitais$() merecem respeito. Ajude-os com assuntos inacabados."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(7)$(italic)\"A esperança ajuda.\"$(br)— M. v. Lipwig$()$(br2)$(8)Carimbo oficial do$(br)Departamento de Relações$(br)Interespécie de Ankh-Morpork$(br2)Aprovado pelo Patrício.$(br)Protocolado em triplicata.$(br)Arquivado. Eventualmente."
+    }
+  ]
+}

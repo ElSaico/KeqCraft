@@ -1,0 +1,16 @@
+{
+  "name": "Anões",
+  "icon": "minecraft:iron_pickaxe",
+  "category": "verdant_gears:species",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Anões são artífices por vocação. Ferreiros, armeiros e funileiros são profissões tradicionais.$(br2)Nunca toque na barba de um anão sem permissão. Isso é equivalente a um insulto grave."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Gênero anão é um assunto privado. Não pergunte. Não adivinhe. Não comente. Todos os anões usam barba e avental de couro — isso não é uma $(italic)pista$().$(br2)Respeite o ofício acima de tudo."
+    }
+  ]
+}
