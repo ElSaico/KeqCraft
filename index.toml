@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "AGENTS.md"
+hash = "4bc7c451a1fd09368dad7d2b51ce888d7384f096b7649550e037f97003e17c70"
+
+[[files]]
 file = "kubejs/assets/verdant_gears/lang/en_us.json"
 hash = "42ea9384722ddd91b4519e439627dcf546ff9c24c63eb40d5b351584b1252b45"
 
@@ -9,24 +13,104 @@ file = "kubejs/assets/verdant_gears/lang/pt_br.json"
 hash = "736ccf6ed4d265840ddef62e256201a54f5c0be21c36adfee3ffacf81f2c996b"
 
 [[files]]
-file = "kubejs/server_scripts/bridge_recipes.js"
-hash = "62a8142bb418e9f22434b293fa9bcb3d168a43c49b6e68c6ae891e73b1d8f476"
+file = "kubejs/data/create/tags/block/passive_boiler_heaters.json"
+hash = "3e3aaae590f70a58a1e15d75a7eb608b14a93da75acf87f5eb0a893c47e5f65b"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/book.json"
+hash = "012b3bf7eed453686ef688f3ca7338351472b1f2d2f0b811b2c877f0032621aa"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/en_us/categories/advice.json"
+hash = "00ae07c848c89a48e00c8ce74fa9790e86b45870fdbb98a806a3a6ae6a03a685"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/en_us/categories/species.json"
+hash = "88a515b17fc3485b4418b2e0667059718689782f879cbe1977e7c2d720fbfd84"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/en_us/entries/advice/general.json"
+hash = "4aefde798da50fbd9fb48b8f411751f01d3429de28ac6c59ce087ecc05ec217e"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/en_us/entries/species/dwarfs.json"
+hash = "701d31c82d6fc060a79bdf801e3bf137eba945fe3bbbf225e1ed1d6572ab48d1"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/en_us/entries/species/gnomes.json"
+hash = "0f1f6bfaa2b9245e1e3f0691de4f5f70cb52a0a16f69ffcf8fdfb21a4fca8d5a"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/en_us/entries/species/goblins.json"
+hash = "1120d11786b92b1c88bf21e9765259c13ba90e998ffa0674c7c91facd9cab117"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/en_us/entries/species/humans.json"
+hash = "2be7ae82916c662532ca5ab5f0dc6d36bc0900e4b939131cbbfef5daa0ee6a0b"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/en_us/entries/species/igors.json"
+hash = "e45e913b958f82e6ce71e677a5c88fc37bbb10ef39ea5c17b267feca1517f1ed"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/en_us/entries/species/trolls.json"
+hash = "5eefa3d72c62b023e8cae9ea96f0456547b4857771ec731793b7b48ef3a89198"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/pt_br/categories/advice.json"
+hash = "c2d05b3e060b37fff340887fb20137520bd3075b789b7fd7d29009172f11be51"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/pt_br/categories/species.json"
+hash = "0a0672e9ca0874dd356e4e72321cfd42eca0cdec0b44d6068f9af0115ca2dae0"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/pt_br/entries/advice/general.json"
+hash = "b44972cc7ed08decc3088156f2bd2c77698eea0aa5ab6713928efb63125e2201"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/pt_br/entries/species/dwarfs.json"
+hash = "3ed5618cec105d637c6c1a0041c457394e1691fd31cd28110e9e477026691270"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/pt_br/entries/species/gnomes.json"
+hash = "609aa4cf8fa9a4ee27e9d3d5a9f7c1a0e6136a214270a05304ffe87092d260c9"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/pt_br/entries/species/goblins.json"
+hash = "3ea9c50cbe07760bcbca2939f0e2b3303644227905da6e1c2ba92e71ceb1cc0f"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/pt_br/entries/species/humans.json"
+hash = "69368300a587157e677b4a212dbca4f0d7dd810d471a3543ff2f31475ccb6dd9"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/pt_br/entries/species/igors.json"
+hash = "60dcd33892d2735c00b8b9b08abc3303c966d7b1af62c2f058d0c6bd957cd329"
+
+[[files]]
+file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/pt_br/entries/species/trolls.json"
+hash = "5cc353806088a59d4c2a40f7e47688f9dd77d556fb70bd45d329a85fdd431817"
+
+[[files]]
+file = "kubejs/data/verdant_gears/recipe/sensitivity_book.json"
+hash = "f8c13ebbc343c1e5efd9cf19b9ea04d4694ec51f11dc71be820a79680e925353"
 
 [[files]]
 file = "kubejs/server_scripts/ender_dragon_buff.js"
-hash = "369fbdf3c177307333a50f918da730d5fe0ff06de43648f53f40a1db16a8593d"
+hash = "16379bc5488b99b1c1a1477824706093e6157703c8b48ddecfa0405540a166c3"
 
 [[files]]
 file = "kubejs/server_scripts/sensitivity_book.js"
-hash = "66b69c56f0aa0dfe1d5bb70ad90f642da227973f29e99295a056344c1dc85b03"
+hash = "a00e1687a3724d6aff4577b57aebc6c2d92d0d812cfc6a69d9aa28fe4369ce95"
 
 [[files]]
 file = "kubejs/server_scripts/troll_temperature.js"
-hash = "2752ca7339b7e9542671415496630e5724ebf399e3b362ea536321994e028c10"
+hash = "7e18f36a5630dad3a74761260b4e46ce43d03163769878545798fc2f0e9e1508"
 
 [[files]]
 file = "kubejs/server_scripts/zombie_release.js"
-hash = "37fe7279fbfb7946d853cb1aadfd264d165dc5fc6e90e82b89d410e75ab6a8a5"
+hash = "2974bf44203c39633d15f2bca509d3ab4ecb1d65ded0cee2824b2ecf0b942252"
 
 [[files]]
 file = "mods/addon-for-irons-spells-n-spellbooks-unofficial.pw.toml"
@@ -46,6 +130,11 @@ metafile = true
 [[files]]
 file = "mods/another-furniture.pw.toml"
 hash = "de1607e5033b34125361d2dd0b9234e08b5951e9d739ee1ded3bb127a842665b"
+metafile = true
+
+[[files]]
+file = "mods/apothic-attributes.pw.toml"
+hash = "014ee07aad95d234a4be89ab018d7cc72b9b41999bf0d5f45de11b509a10bd5e"
 metafile = true
 
 [[files]]
@@ -145,7 +234,7 @@ metafile = true
 
 [[files]]
 file = "mods/curios.pw.toml"
-hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
+hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
 metafile = true
 
 [[files]]
@@ -199,13 +288,13 @@ hash = "3d47b1d933d04934a606be1cbb67481860c3d68c9ed4efc387c7745d23b732a7"
 metafile = true
 
 [[files]]
-file = "mods/inventory-profiles-next.pw.toml"
-hash = "ab503e89461dff879ee793253e173625b6ab868f570a371323ef725e567cf5ea"
+file = "mods/iris.pw.toml"
+hash = "f67aa60c765593a8c70f78296a460349c6aef5f4a16d173eae02e8803b545ad4"
 metafile = true
 
 [[files]]
-file = "mods/iris.pw.toml"
-hash = "f67aa60c765593a8c70f78296a460349c6aef5f4a16d173eae02e8803b545ad4"
+file = "mods/iron-furnaces.pw.toml"
+hash = "cd73757a8c093f490d5c7673ad17f4404622a485234b79dc43efa0e67788d66e"
 metafile = true
 
 [[files]]
@@ -229,6 +318,11 @@ hash = "5367193d3f87b7bc5a81bcd64a5b96a843e76d4df7a83c8bb7e1911aa82dd52e"
 metafile = true
 
 [[files]]
+file = "mods/just-hammers.pw.toml"
+hash = "af4465a52c59ed914f3b924bedb844cee7867b2682a356592aafb7246fd33427"
+metafile = true
+
+[[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "27302b0087cf53570cd7a3b4eb550a208cbb6f6ba07210c604176155f39e0078"
 metafile = true
@@ -241,11 +335,6 @@ metafile = true
 [[files]]
 file = "mods/lendercataclysm.pw.toml"
 hash = "ed13abb3ec3ecf39c855e4d3fdc3d4c328cd60e67584041e1e947ae63fa370fa"
-metafile = true
-
-[[files]]
-file = "mods/libipn.pw.toml"
-hash = "0d2a00252d64ed7d2d9b19994f7accb780304be61f3903d36e810714b414c6cb"
 metafile = true
 
 [[files]]
@@ -299,13 +388,13 @@ hash = "d7f360ebb9f009d6dc0b368cd8fa399bdff70c0f6ef931687b2a35137f72715d"
 metafile = true
 
 [[files]]
-file = "mods/playeranimator.pw.toml"
-hash = "5b30dafc9e96471978376ee010cec0ddf592377ac94192c9370cb37973e1e95f"
+file = "mods/placebo.pw.toml"
+hash = "201e0be56d2d9430843688b4a04dea207732b6d60f8001fb9e6396d48aea287f"
 metafile = true
 
 [[files]]
-file = "mods/probejs.pw.toml"
-hash = "88b00d3ad54d43c702ff2840bfcdbb5405fa7b18d4a595a791bf5ebc649c6dab"
+file = "mods/playeranimator.pw.toml"
+hash = "5b30dafc9e96471978376ee010cec0ddf592377ac94192c9370cb37973e1e95f"
 metafile = true
 
 [[files]]
@@ -341,6 +430,11 @@ metafile = true
 [[files]]
 file = "mods/searchables.pw.toml"
 hash = "ce9ddada6ffd55a512149cc474c6a453281a997a5fdf1b7b4a2cc73f875e704a"
+metafile = true
+
+[[files]]
+file = "mods/simple-planes.pw.toml"
+hash = "ebdca27cce3eca0c88ef7bca69526e4d4f8f7c1fe3c168ce8edf4b9eac6222c4"
 metafile = true
 
 [[files]]
@@ -391,6 +485,11 @@ metafile = true
 [[files]]
 file = "mods/supplementaries.pw.toml"
 hash = "148c5d14dfeca914d20ceea4defa9660fe588e6fc22cea23cab745504d4b2453"
+metafile = true
+
+[[files]]
+file = "mods/to-tweaks-irons-spells.pw.toml"
+hash = "ac467acc6a07a1fffa874c6ee7027734c8d57a21054735a1d31aeaada75b855d"
 metafile = true
 
 [[files]]
