@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {"item": "minecraft:prismarine_shard"},
+    "P": {"item": "minecraft:paper"},
+    "N": {"item": "minecraft:nautilus_shell"}
+  },
+  "pattern": ["MPM", "PNP", "MPM"],
+  "result": {"id": "scguns:ocean_blueprint", "count": 1}
+}

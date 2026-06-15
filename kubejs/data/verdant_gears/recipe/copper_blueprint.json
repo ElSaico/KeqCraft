@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {"item": "minecraft:copper_ingot"},
+    "P": {"item": "minecraft:paper"},
+    "G": {"item": "minecraft:gunpowder"}
+  },
+  "pattern": ["MPM", "PGP", "MPM"],
+  "result": {"id": "scguns:copper_blueprint", "count": 1}
+}

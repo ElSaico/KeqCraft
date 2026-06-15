@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {"item": "minecraft:gold_ingot"},
+    "P": {"item": "minecraft:paper"},
+    "B": {"item": "minecraft:blaze_powder"}
+  },
+  "pattern": ["MPM", "PBP", "MPM"],
+  "result": {"id": "scguns:piglin_blueprint", "count": 1}
+}

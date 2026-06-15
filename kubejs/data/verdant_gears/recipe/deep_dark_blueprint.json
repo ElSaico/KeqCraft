@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {"item": "minecraft:sculk"},
+    "P": {"item": "minecraft:paper"},
+    "E": {"item": "minecraft:echo_shard"}
+  },
+  "pattern": ["SPS", "PEP", "SPS"],
+  "result": {"id": "scguns:deep_dark_blueprint", "count": 1}
+}
