@@ -93,8 +93,40 @@ file = "kubejs/data/verdant_gears/patchouli_books/sensitivity_guide/pt_br/entrie
 hash = "5cc353806088a59d4c2a40f7e47688f9dd77d556fb70bd45d329a85fdd431817"
 
 [[files]]
+file = "kubejs/data/verdant_gears/recipe/copper_blueprint.json"
+hash = "f616fd3b9b48f0bdcd2739774afe2a705e7cfa29a917c2f3e6b2cdac2b49fd0b"
+
+[[files]]
+file = "kubejs/data/verdant_gears/recipe/deep_dark_blueprint.json"
+hash = "ffa149bd649094009c4c9302551557d61ee4c1a1c2bcf726dd3b16a03786b7e9"
+
+[[files]]
+file = "kubejs/data/verdant_gears/recipe/diamond_steel_blueprint.json"
+hash = "458a2184fff064a2b4a299c2bfaf1658953aab68d5d90528cd9b0adb53271f5c"
+
+[[files]]
+file = "kubejs/data/verdant_gears/recipe/end_blueprint.json"
+hash = "33a385df70d543f63e24120346a9008a91a48a865cc21c933d2c5f94fe40f517"
+
+[[files]]
+file = "kubejs/data/verdant_gears/recipe/iron_blueprint.json"
+hash = "626035c24b0b5c45b2be4f02a4912c0b946ce33c34d487ad87b018e716fe1d09"
+
+[[files]]
+file = "kubejs/data/verdant_gears/recipe/ocean_blueprint.json"
+hash = "89fa28c28758a399aa2d8be45fa05c41be92c82ec43b3d1434e84d78a88a486b"
+
+[[files]]
+file = "kubejs/data/verdant_gears/recipe/piglin_blueprint.json"
+hash = "ca86358b3b32447e863c222e75ad2dcbb583df534bd98c79627b58545b7c58e2"
+
+[[files]]
 file = "kubejs/data/verdant_gears/recipe/sensitivity_book.json"
 hash = "f8c13ebbc343c1e5efd9cf19b9ea04d4694ec51f11dc71be820a79680e925353"
+
+[[files]]
+file = "kubejs/data/verdant_gears/recipe/treated_brass_blueprint.json"
+hash = "ff90c6c0523013e88e5a7f73002f5077be05713be76c949dfc494a4eec4dcac7"
 
 [[files]]
 file = "kubejs/server_scripts/ender_dragon_buff.js"
@@ -188,8 +220,18 @@ hash = "8e671fbd3a5460a61073cced391ec08efc6b67d765e49015eea45a1f1db159a0"
 metafile = true
 
 [[files]]
+file = "mods/create-aeronautics-compatability.pw.toml"
+hash = "100f2238e1b1c6548ff80c129706c40548fc0eaf02028920589c67a5d4b333ec"
+metafile = true
+
+[[files]]
 file = "mods/create-aeronautics.pw.toml"
 hash = "6ea6284b569b13f45bfe44f9790389de4a2f7cda92c8b3bb94511b600d64c486"
+metafile = true
+
+[[files]]
+file = "mods/create-big-cannons.pw.toml"
+hash = "f7b20a7e5ae4678c0e74e7e6945f48c402636f8887d65b0cdab0357dd5c08856"
 metafile = true
 
 [[files]]
@@ -218,6 +260,11 @@ hash = "7c9a7c6b0ba555d29cdff0c2874dfee7d1cd7807f084fcf08b3820b382dc3cb8"
 metafile = true
 
 [[files]]
+file = "mods/create-ultimate-factory.pw.toml"
+hash = "34d808989e71221b8e01a44bc8031f20af1c94981acb0cba4669e0e58be69629"
+metafile = true
+
+[[files]]
 file = "mods/create.pw.toml"
 hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
 metafile = true
@@ -230,6 +277,11 @@ metafile = true
 [[files]]
 file = "mods/createpolyphony.pw.toml"
 hash = "d932964b8d9623b5913a01625d63bcf054a0ea10590d07a7a90e1a6a99466379"
+metafile = true
+
+[[files]]
+file = "mods/creativecore.pw.toml"
+hash = "d1dd0981cbd7ae9601c9c4603f88826b68a0c7e76fc12ef6bc80f08188d7dfb8"
 metafile = true
 
 [[files]]
@@ -334,7 +386,7 @@ metafile = true
 
 [[files]]
 file = "mods/lendercataclysm.pw.toml"
-hash = "ed13abb3ec3ecf39c855e4d3fdc3d4c328cd60e67584041e1e947ae63fa370fa"
+hash = "8face75cbf61291840df2e5dd22a8eb01989d08c2b14cffc39ca8fdd6116ca34"
 metafile = true
 
 [[files]]
@@ -370,6 +422,11 @@ metafile = true
 [[files]]
 file = "mods/natures-aura.pw.toml"
 hash = "ec02433e67eddb75983b9581ab3b3aae3625c18bbef29db4e0536923dfb1d6ed"
+metafile = true
+
+[[files]]
+file = "mods/natures-compass.pw.toml"
+hash = "35acdf433fe8f8599f59975e848efdb717663c2c471d3a5dc18743799795a736"
 metafile = true
 
 [[files]]
@@ -418,8 +475,18 @@ hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
 metafile = true
 
 [[files]]
+file = "mods/rpl.pw.toml"
+hash = "7815e5a589de0c02a62ae83590e1f75f4d0c269e48f2435ce2ac448976ddf49f"
+metafile = true
+
+[[files]]
 file = "mods/sable.pw.toml"
 hash = "e4c43e944439f4941ba1c417ab3ac1ec3dbd9c95a8456a2069641d031317e142"
+metafile = true
+
+[[files]]
+file = "mods/sablecompat.pw.toml"
+hash = "753db312dde944dc4278569734f2d14a7e47a9344946de3cf3b10c601ecd9764"
 metafile = true
 
 [[files]]
@@ -488,13 +555,28 @@ hash = "148c5d14dfeca914d20ceea4defa9660fe588e6fc22cea23cab745504d4b2453"
 metafile = true
 
 [[files]]
-file = "mods/to-tweaks-irons-spells.pw.toml"
-hash = "ac467acc6a07a1fffa874c6ee7027734c8d57a21054735a1d31aeaada75b855d"
+file = "mods/unofficial-irons-spells-n-spellbooks-skill-tree.pw.toml"
+hash = "8ec52725b2106cf9888c95f90736a6bed30ea0f7cc2a3386bccecaf4f6613090"
 metafile = true
 
 [[files]]
-file = "mods/unofficial-irons-spells-n-spellbooks-skill-tree.pw.toml"
-hash = "8ec52725b2106cf9888c95f90736a6bed30ea0f7cc2a3386bccecaf4f6613090"
+file = "mods/waterframes.pw.toml"
+hash = "59e15d108b41b10145596a3ef899ad20ef8c8885504eef10cd89225aef87daef"
+metafile = true
+
+[[files]]
+file = "mods/watermedia-yt-plugin.pw.toml"
+hash = "4faf890cddc7addc968e262b4bc55ca47f59e482fa5c23e780def45d099f84e4"
+metafile = true
+
+[[files]]
+file = "mods/watermedia.pw.toml"
+hash = "9c14d2011a343872dfa72aee64ef7beb2f9f9e47867807b4b03726cfa8e429b7"
+metafile = true
+
+[[files]]
+file = "mods/watervision.pw.toml"
+hash = "393310e8c75c51eb3143c8ddcdac51917a5d759d428e5b962e4c2b4c8e87bc0e"
 metafile = true
 
 [[files]]
