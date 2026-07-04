@@ -2,7 +2,31 @@ hash-format = "sha256"
 
 [[files]]
 file = "AGENTS.md"
-hash = "4bc7c451a1fd09368dad7d2b51ce888d7384f096b7649550e037f97003e17c70"
+hash = "1b2f4a415925a3d6bcf702a9f8d40fb994c69f4039db0b7fbebdb49319010888"
+
+[[files]]
+file = "config/almostunified/duplicates.json"
+hash = "b70f57eadf6eec0ce43acd4c441f08feac1432826e04cb8e2736a73997c20c08"
+
+[[files]]
+file = "config/almostunified/placeholders.json"
+hash = "43733b207b9f0238c7a5bec47f19e8fd5bec80499b286e0ac4994671702dfed9"
+
+[[files]]
+file = "config/almostunified/startup.json"
+hash = "37f013c49586db025c17f9fa6657c6f239e0169ebc97ef682ff114a2ede43c5e"
+
+[[files]]
+file = "config/almostunified/tags.json"
+hash = "2512b9c947342813ee667013941f07c3be8323ac4cb8d3d1686dd8530c7c66b1"
+
+[[files]]
+file = "config/almostunified/unification/materials.json"
+hash = "036061d17fd72ed8c9b4980ecaf56f7ed45089f50b8ebb83a05bbff7c0a6e720"
+
+[[files]]
+file = "config/create_connected-common.toml"
+hash = "c28146e752188ed5eaf1e1a5f01f0dc785d0fd883f661e8878f6806b9b626c85"
 
 [[files]]
 file = "kubejs/assets/verdant_gears/lang/en_us.json"
@@ -11,6 +35,10 @@ hash = "42ea9384722ddd91b4519e439627dcf546ff9c24c63eb40d5b351584b1252b45"
 [[files]]
 file = "kubejs/assets/verdant_gears/lang/pt_br.json"
 hash = "736ccf6ed4d265840ddef62e256201a54f5c0be21c36adfee3ffacf81f2c996b"
+
+[[files]]
+file = "kubejs/data/c/tags/item/plates/zinc.json"
+hash = "01733625fa2c41c716b65346c957526e860ea9c030a8e80046c5f841da7f39d9"
 
 [[files]]
 file = "kubejs/data/create/tags/block/passive_boiler_heaters.json"
@@ -202,6 +230,11 @@ metafile = true
 [[files]]
 file = "mods/clumps.pw.toml"
 hash = "2acaff560bbda5741538528a2967355ec86a8f7564adba0b2316989c66892374"
+metafile = true
+
+[[files]]
+file = "mods/collective.pw.toml"
+hash = "e37aafe5cd58c8289c3b8929393cba2a5c7f2cdd5bbe01e9c6ada1f3f5b86436"
 metafile = true
 
 [[files]]
@@ -475,6 +508,11 @@ hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
 metafile = true
 
 [[files]]
+file = "mods/rolling-gate.pw.toml"
+hash = "e9844b4f7b285729e2fdf4be938d3fe66d52225eddafd3581d741a3bfa337575"
+metafile = true
+
+[[files]]
 file = "mods/rpl.pw.toml"
 hash = "7815e5a589de0c02a62ae83590e1f75f4d0c269e48f2435ce2ac448976ddf49f"
 metafile = true
@@ -497,6 +535,16 @@ metafile = true
 [[files]]
 file = "mods/searchables.pw.toml"
 hash = "ce9ddada6ffd55a512149cc474c6a453281a997a5fdf1b7b4a2cc73f875e704a"
+metafile = true
+
+[[files]]
+file = "mods/silicone-dolls.pw.toml"
+hash = "92e3f40fe410a1f45944b2de8fb7d4a6df9fcb88217a741253245ce84bfa69e2"
+metafile = true
+
+[[files]]
+file = "mods/silkier-touch.pw.toml"
+hash = "a36a12c0e4095d98967a3329374654db564f992426adb82b6970a1b8f600f465"
 metafile = true
 
 [[files]]

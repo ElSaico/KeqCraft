@@ -1,5 +1,41 @@
 # Agent Notes — Verdant Gears
 
+## Investigating Mod Data
+
+When asked about any modded content — mechanics, recipes, tags, properties, ranges, costs, etc. — always consult the actual files before answering. Never guess from memory or rely solely on in-game books/Wikis.
+
+### Mechanics (ranges, caps, costs, internal logic)
+
+1. Find the mod's GitHub repo (usually `github.com/<author>/<mod>` from CurseForge/Modrinth)
+2. Navigate to the block/entity source: `src/main/java/<path>/blocks/tiles/BlockEntity<Name>.java`
+3. Read the `tick()` method and any config fields
+4. Check the mod's `.toml` config in the instance's `config/` directory for adjustable values
+5. Report actual code with line numbers — not guesses
+
+### Recipes, Tags, Block Properties, Loot Tables
+
+These are data-driven (JSON), not source code. Extract them from the mod's jar:
+
+```bash
+# List recipe/tag files in a mod jar
+jar tf /path/to/instance/mods/ModName-version.jar | grep -E 'data/.*/recipe|data/.*/tags|data/.*/loot_table'
+
+# Extract and read a specific file
+jar xf /path/to/instance/mods/ModName-version.jar data/modid/recipe/something.json
+cat data/modid/recipe/something.json
+```
+
+Or check the mod's GitHub repo under `src/generated/resources/data/` or `src/main/resources/data/`.
+
+### Item/Block Registry (what items exist)
+
+Use the mod's JEI/EMI integration in-game, or check:
+```bash
+jar tf ModName.jar | grep 'assets/.*/models/item\|assets/.*/blockstates'
+```
+
+Do NOT rely on the in-game book alone — it often omits technical details. Config files only show adjustable values, not hardcoded logic. JSON data shows the ground truth for recipes, tags, and properties.
+
 ## KubeJS 2101 + ProbeJS Type Pitfalls
 
 ### `$Type` vs `$Type_` (underscore suffix)
