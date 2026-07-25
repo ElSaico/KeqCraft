@@ -20,17 +20,17 @@ migrateCopycatsOnInitialize = true
 	kinetic_battery = true
 	inventory_access_port = true
 	centrifugal_clutch = true
-	copycat_slab = true
+	copycat_slab = false
 	brass_chute = true
 	overstress_clutch = true
 	brake = true
-	copycat_block = true
-	copycat_fence_gate = true
-	copycat_stairs = true
+	copycat_block = false
+	copycat_fence_gate = false
+	copycat_stairs = false
 	large_crank_wheel = true
 	brass_gearbox = true
-	copycat_vertical_step = true
-	copycat_wall = true
+	copycat_vertical_step = false
+	copycat_wall = false
 	six_way_gearbox = true
 	crank_wheel = true
 	encased_chain_cogwheel = true
@@ -40,10 +40,10 @@ migrateCopycatsOnInitialize = true
 	shear_pin = true
 	inverted_gearshift = true
 	linked_transmitter = true
-	copycat_beam = true
-	copycat_board = true
+	copycat_beam = false
+	copycat_board = false
 	inventory_bridge = true
-	copycat_fence = true
+	copycat_fence = false
 
 #.
 #Enable/disable categories of features. Disabling a category hides all related features. Values on server override clients
@@ -60,7 +60,7 @@ migrateCopycatsOnInitialize = true
 	logistics = true
 	#.
 	#All copycats (Install Create: Copycats+ to upgrade)
-	copycats = false
+	copycats = true
 	#.
 	#All building palette blocks
 	palette = true
