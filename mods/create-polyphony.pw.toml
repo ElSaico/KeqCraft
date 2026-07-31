@@ -1,0 +1,13 @@
+name = "Create: Polyphony"
+filename = "createpolyphony-0.2.1+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bfb1ddcf65e36fbb0ab2e18e7e3d43b3cd3f9c1b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8056387
+project-id = 1526975
